@@ -2,7 +2,7 @@
 NetPractice is a hands-on networking project for essential computer networking fundamentals
 
 
-## Networking Fundamentals (Study Resources):
+## Networking Fundamentals (Study Resources)
 
 #### Introduction to Networking
   - [CS 198 - Introduction to the Internet](https://textbook.cs168.io/intro/intro.html)
