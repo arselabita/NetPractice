@@ -15,7 +15,7 @@ NetPractice is a hands-on networking project for essential computer networking f
 
 ### IP Addressing Basics
   - [What is an IP Address? (Video)](https://www.youtube.com/watch?v=5WfiTHiU4x8&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF)
-  - [What is an IP Address? (Article)]([https://www.fortinet.com/resources/cyberglossary/static-vs-dynamic-ip](https://www.fortinet.com/resources/cyberglossary/what-is-ip-address))
+  - [What is an IP Address? (Article)](https://www.fortinet.com/resources/cyberglossary/what-is-ip-address)
   - [Public vs Private IP Address](https://docs.netgate.com/pfsense/en/latest/network/addresses.html)
   - [Static vs Dynamic IP Address](https://www.fortinet.com/resources/cyberglossary/static-vs-dynamic-ip)
   - [DHCP (Dynamic Host Configuration Protocol)](https://www.fortinet.com/resources/cyberglossary/dynamic-host-configuration-protocol-dhcp)
