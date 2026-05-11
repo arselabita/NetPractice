@@ -72,9 +72,6 @@ As a review the internet with all of its computers, servers, and routers is an e
   <img src="pictures/aa.png" width="500">
 </p>
 
-
-### TCP/IP, OSI layers. Why does layering even exist? What problem does it solve?
-
 ## Study Resources
 
 #### Introduction to Networking
