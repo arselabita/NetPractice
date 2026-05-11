@@ -38,6 +38,42 @@ By the end, networking stops feeling like a black box and starts feeling like a 
 
 - In our case the internet is an example of the wide area network.
 
+### IP addresses, subnet masks, gateways, switches, routers.
+
+- Now a lot of times what may happen in a lot of businesses is that they may have different departments. 
+- For example: they may have a *service department* and a *sales department*. And a lot of times that business may want to **separate** **the computer network data** in the different departments from each other so that the sales department doesn't see **any network traffic** from the service department and vice versa. So, what a business will do is that they wil **divide their own LAN** into two **smaller networks**.
+
+<p align="center">
+  <img src="pictures/slazzer-preview-elr82.png" width="500">
+</p>
+
+- These smaller networks are called **subnetworks**. And shorter way to refer to is **subnet**. A subnet is just a division of a bigger network. So, this network here is still a LAN but within that LAN we have two subnetworks or subnets.
+
+-  Now, what divides a network from another network is a **router**. A router is the doorway or the gateway to a network. So, this router here is what's separating these two subnets.
+
+<p align="center">
+  <img src="pictures/slazzer-preview-5wfhg.png" width="500">
+</p>
+
+- Also, this network is **not** just **limited** to **creating** just two **subnets**, it can create how many it wants, it just depends on the needs of the business. So, if this business expanded and they wanted to create another department, they can further separate this network and create a third subnet by adding another router. So, now the LAN has three subnets.
+
+<p align="center">
+  <img src="pictures/slazzer-preview-i46ef.png" width="500">
+</p>
+
+- Moreover, the **reason why** an organization or business would create subnets is to **separate** the **network traffic**. This could be for several different reasons, such as:
+    1. **Manageability**: Because, if any problems happen on a network it would be easier to pinpoint on smaller networks than on large networks.
+    2. **Security**: Subnets can have their own separate security rules to either allow or deny access to certain data.
+    3. **Improve the performance**: This by controlling broadcast traffic. When a computer wants to communicate with other computers on a network it sends out the broadcast to every computer on the network. So, every computer can hear the broadcast traffic from every other computer. But, by braking down a network into smaller subnets, the broadcast are heard by other computers on the same subnet, therefore limiting the amount of broadcast traffic.
+
+As a review the internet with all of its computers, servers, and routers is an example of a WAN. But, within that Wide Area Network there are LANs. These are private networks that are in organizations, businesses and homes. And within those LANs we have subnets which are divisions of larger networks.
+
+<p align="center">
+  <img src="pictures/aa.png" width="500">
+</p>
+
+
+### TCP/IP, OSI layers. Why does layering even exist? What problem does it solve?
 
 ## Study Resources
 
