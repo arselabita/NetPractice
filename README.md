@@ -223,4 +223,4 @@ Once a level is solved, click the *Get my config* button to download the configu
 
 ## AI usage
 No AI tools were used in this project, in line with the 42 AI policy.
-Solutions were validated through peer reviews and independent research.
+Solutions were validated through independent research.
