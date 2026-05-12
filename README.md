@@ -157,8 +157,6 @@ Switches connect devices within the same network. Routers separate networks from
 
 Every concept in this documentation, like IP classes, CIDR notation, LAN, WAN, gateways, exists to solve one problem: *how to deliver data reliably across a system of millions of devices without it turning into chaos.*
 
-That is the foundation of NetPractice.
-
 ## Instructions
 ### How to use this training interface
 
@@ -226,4 +224,4 @@ Once a level is solved, click the *Get my config* button to download the configu
 
 ## AI usage
 No AI tools were used in this project, in line with the 42 AI policy.
-Solutions were validated through peer reviews and independent research.
+Solutions were validated through independent research.
