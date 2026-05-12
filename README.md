@@ -14,7 +14,6 @@ The topics covered include the layered structure of TCP/IP and OSI models, IP ad
 
 By the end, networking stops feeling like a black box and starts feeling like a logical, predictable system, one that can be read, debugged, and reasoned about from the ground up.
 
-
 ## Description
 ### How does machine A communicate with machine B when connected to a network?
   
@@ -114,7 +113,7 @@ A broadcast is essentially when a computer sends out data to all computers on th
 
 And, this is why in order to prevent this, large networks should need to be broken down into smaller networks, and networks are broken down and physically separated by using **routers**. By using routers this would solve the problem of traffic because broadcasts do not go beyond routers. Broadcasts stay within the network.
 
-So, instead of a large network, this network is broken down into 6 subnetworks or subnets. If one computer wants to communicate with another one, the computer with send out a broadcast that only the computers within that subnetwork will. But, since that computer it wants to communicate with is in another subnetwork, the data will be sent to the **default gateway**, *which is the router*, and then the router will intelligently route the data to the destination.
+So, instead of a large network, this network is broken down into 6 subnetworks or subnets. If one computer wants to communicate with another one, the computer will send out a broadcast that only the computers within that subnetwork will. But, since that computer it wants to communicate with is in another subnetwork, the data will be sent to the **default gateway**, *which is the router*, and then the router will intelligently route the data to the destination.
 
 <p align="center">
   <img src="pictures/subnetworks.png" width="500">
@@ -134,7 +133,7 @@ When an organization needs networking they will need an IP address class accordi
   <img src="pictures/classes.png" width="500">
 </p>
 
-Also, a different way to express subnet masks is a method called **CIDR** which stands for **Classes Inter-Domain Routing** also known as **slash notation**. Slash notation is a shorter way to write a subnet mask. And it does this by writing a forward slash notation and then a number counting the 1s in the subnet mask.
+Also, a different way to express subnet masks is a method called **CIDR** which stands for **Classless Inter-Domain Routing** also known as **slash notation**. Slash notation is a shorter way to write a subnet mask. And it does this by writing a forward slash notation and then a number counting the 1s in the subnet mask.
 
 For example, if an IP address like this, with a CIDR notation of \24 this means that the subnet mask is 24 bits in length, meaning it has 24 -> 1s.
 
@@ -148,13 +147,51 @@ More examples of this notation:
 </p>
 
 
+## Conclusion
+
+Networking is a logical system built on a small set of rules that, once understood, make everything predictable.
+
+A message traveling from one machine to another follows a clear path: it carries an IP address that identifies both where it comes from and where it is going, a subnet mask that defines the boundaries of the network it belongs to, and a default gateway that knows how to forward it when the destination is out of reach.
+
+Switches connect devices within the same network. Routers separate networks from each other and direct traffic between them. Subnets keep broadcast traffic contained, networks manageable, and data secure.
+
+Every concept in this documentation, like IP classes, CIDR notation, LAN, WAN, gateways, exists to solve one problem: *how to deliver data reliably across a system of millions of devices without it turning into chaos.*
+
+That is the foundation of NetPractice.
+
+## Instructions
+### How to use this training interface
+
+The repository contains a directory called `net_practice` which holds 10 different exercises of increasing difficulty, Each exercise simulates a real network scenario and teaches how devices communicate using IP addresses, subnet masks, gateways, switches, and routers.
+
+### Running the interface
+
+To launch the training interface, open a terminal in the root of the repository and run:
+
+```bash
+./run.sh
+```
+A page will open in the browser. Enter your intra login when prompted then click **start** to begin.
+
+> If the permission is denied, run `chmod +x run.sh` first.
+
+### Navigating the exercises
+
+Each level presents a broken network. The goal is to fix it by filling in the correct values IP addresses, subnet masks or gateway addresses, until all the connections are established. A green indicator confirms a successful configuration.
+
+Use *Check again* button to validate your solution before moving on.
+
+### Exporting a configuration
+
+Once a level is solved, click the *Get my config* button to download the configuration file for that level. Each exported file must be saved, these are what get submitted.
+
 ## Study Resources
 
 #### Introduction to Networking
   - [CS 198 - Introduction to the Internet](https://textbook.cs168.io/intro/intro.html)
   - [Networking Overview](https://www.youtube.com/watch?v=kNKHM_isojI)
   - [Networking (Article | A mini guide to networking)](https://datahacker.blog/industry/technology-menu/networking)
-  - [Networking Animated Videos (**I truly recommend these as i understood a lot**)](https://www.youtube.com/playlist?list=PL7zRJGi6nMRzg0LdsR7F3olyLGoBcIvvg)
+  - [Networking Animated Videos (**I truly recommend these videos**)](https://www.youtube.com/playlist?list=PL7zRJGi6nMRzg0LdsR7F3olyLGoBcIvvg)
 
 #### OSI & TCP/IP Models
   - [OSI Model (Wikipedia)](https://en.wikipedia.org/wiki/OSI_model)
@@ -178,7 +215,6 @@ More examples of this notation:
   - [IP Subnet Concepts](https://docs.netgate.com/pfsense/en/latest/network/subnets.html)
   - [Understanding CIDR](https://docs.netgate.com/pfsense/en/latest/network/cidr.html)
   - [CIDR (Cheat Sheet)](https://subnet.im/cheat-sheet)
-  - [Subnet (Cheat Sheet)](https://subnet.im/cheat-sheet)
 
 #### Core Networking Protocols
   - [TCP/IP Overview](https://www.fortinet.com/resources/cyberglossary/tcp-ip)
@@ -186,3 +222,7 @@ More examples of this notation:
 
 #### Network Concepts
   - [Broadcast Domains](https://docs.netgate.com/pfsense/en/latest/network/broadcast-domains.html)
+
+## AI usage
+No AI tools were used in this project, in line with the 42 AI policy.
+Solutions were validated through peer reviews and independent research.
