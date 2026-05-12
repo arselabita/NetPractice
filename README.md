@@ -192,6 +192,7 @@ Once a level is solved, click the *Get my config* button to download the configu
   - [Networking Overview](https://www.youtube.com/watch?v=kNKHM_isojI)
   - [Networking (Article | A mini guide to networking)](https://datahacker.blog/industry/technology-menu/networking)
   - [Networking Animated Videos (**I truly recommend these videos**)](https://www.youtube.com/playlist?list=PL7zRJGi6nMRzg0LdsR7F3olyLGoBcIvvg)
+  - [RFC (Contains technical and organizational documents about the Internet)](https://www.rfc-editor.org/)
 
 #### OSI & TCP/IP Models
   - [OSI Model (Wikipedia)](https://en.wikipedia.org/wiki/OSI_model)
