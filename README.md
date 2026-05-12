@@ -72,6 +72,51 @@ As a review the internet with all of its computers, servers, and routers is an e
   <img src="pictures/aa.png" width="500">
 </p>
 
+Now, we talked about all these components but we still don't know what's an **IP address**?
+
+An IP address is an **identifier** for a computer or device on a network. Every device has to have an IP address for communication purposes. And, to be more specific, **IPv4 address**. An IPv4 address is a *32-bit numeric address*, written as four numbers, separated by periods. 
+
+<p align="center">
+  <img src="pictures/bb.png" width="500">
+</p>
+
+Each group of numbers that are separated by periods are called an octet. And the number range in each octet is from 0 - 255.
+
+<p align="center">
+  <img src="pictures/ss.png" width="500">
+</p>
+
+The IP address consists of **two parts**.
+  1. The first part is the **network address**. It is a number that is assigned to a network. So, that every network as a unique address.
+  2. The second part is the **host address**. It is assigned to hosts within that network such as computers, servers, tablets, routers, and so on. So, every host will have a unique host address.
+
+Now, how do we tell which is the network address and the host address in an IP address?
+
+Here, is where the **subnet mask** number comes into play. As we know by now, a subnet mask or subnet is *a number that resembles an IP address*. And it reveals how many bits in the IP address are used for the network by masking the network portion of the IP address.
+
+Why does an IP address have a network part and a host part?
+
+The reason for this is for breaking down a large network into a smaller network or subnetworks, which is known as **subnetting**.
+
+Imagine this, consider we have an organization and it has a large amount of computers connected to a huge network. Now, when a computer wants to exchange messages with another computer, it needs to know how and where to reach that computer. It does this by using a **broadcast**.
+
+<p align="center">
+  <img src="pictures/broadcasts1.png" width="500">
+</p>
+
+A broadcast is essentially when a computer sends out data to all computers on the network so it can locate and talk to a certain computer. But, in the end, even if we locate the computer in this case, the idea behind this is that in any case these computers in this corporate will be constantly sharing data and communicating with each other. And, if every computer is broadcasting to find the address for its message destination it would be a chaos, a lot of traffic of data and would be too hard to pinpoint the issues and troubleshoot.
+
+And, this is why in order to prevent this, large networks should need to be broken down into smaller networks, and networks are broken down and physically separated by using **routers**. By using routers this would solve the problem of traffic because broadcasts do not go beyond routers. Broadcasts stay within the network.
+
+<p align="center">
+  <img src="pictures/subnetworks.png" width="500">
+</p>
+
+So, instead of a large network, this network is broken down into 6 subnetworks or subnets. If one computer wants to communicate with another one, the computer with send out a broadcast that only the computers within that subnetwork will. But, since that computer it wants to communicate with is in another subnetwork, the data will be sent to the **default gateway**, *which is the router*, and then the router will intelligently route the data to the destination.
+
+This is why IP addresses have a network portion and a host portion, so networks can be logically broken down into smaller networks which is known as subnetting. 
+
+
 ## Study Resources
 
 #### Introduction to Networking
